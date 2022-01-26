@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #204051;
+    color: #fff;
+}
+
+input, button {
+    font-size: 1em;
+}
+
+.header-title i {
+    margin-right: 5px;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 5px 29px -9px rgba(161,161,161,0.97);
+    margin-top: 50px;
+}
+
+.input_section h2,
+.book-shelf h2 {
+    text-align: center;
+    color: #3b6978;
+}
+
+.input .input-field {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #204051;
+    display: block;
+    outline: none;
+    width: 80%;
+    padding: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+    background: transparent;
+}
+
+.input_section #inputBook .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_section form button {
+    background-color: #84a9ac;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    width: 20%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    position: relative;
+    /* left: 70%; */
+    box-shadow: 4px 5px 29px -9px rgba(161,161,161,0.97);
+    transition: 0.2s;
+    
+}
+
+#clear-btn {
+    width: 8%;
+}
+
+.input_section form button:hover {
+    background-color: #3b6978;
+}
+
+.input_section form .input_inline {
+    display: flex;
+    color: #204051;
+    align-items: center;
+    left: 10%;
+    position: relative;
+    width: 80%;
+}
+
+.input_section form .input_inline > label {
+    padding: 20px 10px;
+    font-weight: 400;
+}
+
+.input_section form .input_inline h4 {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #204051;
+}
+
+
+
+.list-book {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 5px 29px -9px rgba(161,161,161,0.97);
+    margin-top: 25px;
+}
+
+#search-book {
+    display: flex;
+    width: 80%;
+}
+
+#searchBookTitle {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #204051;
+    display: block;
+    outline: none;
+    width: 30%;
+    padding: 8px 8px 0;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    left: 73%;
+}
+
+#searchButton {
+    background-color: #84a9ac;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    margin-top: 6px;
+    cursor: pointer;
+    width: 20%;
+    position: relative;
+    box-shadow: 4px 5px 29px -9px rgba(161,161,161,0.97);
+    transition: 0.2s;
+    left: 74%;
+    height: 100%;
+}
+
+#searchButton:hover {
+    background-color: #3b6978;
+}
+
+.book-shelf {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table thead {
+    background: #84a9ac;
+    color: #fff;
+    border-right: 0;
+}
+
+table thead tr th,
+table tbody tr td {
+    text-align: left;
+    width: 25%;
+    padding-left: 5px;
+    
+}
+
+table thead tr th {
+    font-weight: 500;
+}
+
+table tbody tr {
+    background: #cae8d5;
+}
+
+table tbody tr td {
+    font-weight: 500;
+    color: #204051;
+    padding: 10px 0 10px 5px;
+}
+
+.check-button,
+.trash-button,
+.undo-button {
+    background: #204051;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30px;
+    margin: 0 5px;
+}
+
+
+.check-button:hover,
+.trash-button:hover,
+.undo-button:hover {
+    background: #3b6978;
+    color: #fff;
+}

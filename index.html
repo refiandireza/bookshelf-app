@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf APP</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="navbar">
+    <h1 class="header-title">
+        <i class="fas fa-book"></i> Bookshelf Apps 
+    </h1>
+</header>
+
+<main>
+    <section class="input_section">
+        <h2>Add Book</h2>
+        <form id="inputBook" onsubmit="return false">
+            <div class="input">
+                <input class="input-field" id="inputBookTitle" type="text" required placeholder="Title">
+            </div>
+            <div class="input">
+                <input class="input-field" id="inputBookAuthor" type="text" required placeholder="Author">
+            </div>
+            <div class="input">
+                <input class="input-field" id="inputBookYear" type="number" required maxlength="4" placeholder="year">
+            </div>
+            <div class="input_inline">
+                <h4>Read Status: </h4>
+                <label for="inputBookNotComplete">Unfinished</label>
+                <input id="inputBookNotComplete" type="radio" value="unfinished" name="status" checked>
+                <label for="inputBookIsComplete">Finished</label>
+                <input id="inputBookIsComplete" value="finished" type="radio" name="status">
+                
+            </div>
+            <div class="btn-container">
+                <button id="bookSubmit"  type="submit">Add Book</button>
+                <button id="clear-btn" onclick="clearText()" type="button"><i class="fas fa-eraser"></i></button>
+            </div>
+        </form>
+    </section>
+    
+    <section class="list-book">
+        <div class="search-section">
+            <form id="search-book">
+                <input type="text" id="searchBookTitle" placeholder="Book Title">
+                <button type="button" id="searchButton" onclick="searchBookByTitle()"><i class="fas fa-search"></i> Find Book</button>
+            </form>
+        </div>
+
+        <div class="book-shelf">
+            <h2>Unfinished Books</h2>
+            <div class="unfinishedBookList">
+                <table id=book-list-table>
+                    <thead>
+                        <tr class="table-header">
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Year</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead><tbody id="unfinished-book-list-detail" align="center">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="book-shelf">
+            <h2>Finished Books</h2>
+            <div class="finishedBookList">
+                <table id=book-list-table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Year</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="finished-book-list-detail" align="center"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/dom.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
